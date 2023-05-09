@@ -5,7 +5,7 @@ function App() {
   const [dat, setData] = useState("");
 
   const FetchData = () => {
-    fetch(`https://excuser.herokuapp.com/v1/excuse/${excuse}`)
+    fetch(`https://excuser-three.vercel.app/v1/excuse/${excuse}`)
       .then((res) => res.json())
       .then((data) => setData(data[0].excuse));
   };
